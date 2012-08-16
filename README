@@ -1,0 +1,32 @@
+Pylon Smart Metering framework in C
+===================================
+
+[Project status: Work in Progress]
+
+Pylon is a C framework to facilitate the interaction with arbitrary sensors,
+emphasizing the field of Smart Metering. It is designed for OpenWrt to allow
+the implementation of sensor gateways on embedded systems.
+
+Features:
+- Built-in support for different Smart Metering devices
+- Provides an interface to sample from arbitrary sensors
+- Ability to send measurements in real-time to a RESTful Web service
+- Customizable logging facility
+
+The framework includes the application smlogger to demonstrate these
+capabilities.
+
+Supported devices so far:
+- Landis+Gyr E750 Smart Meter
+- Fluksometer v2
+
+OpenWrt Support:
+- Package Makefile provided, no patches needed
+- Depends on the libsml package which is currently outdated at the OpenWrt 
+  repositories, update is pending
+
+Prerequisites:
+- libsml (https://github.com/dailab/libsml)
+- libcurl (http://curl.haxx.se/libcurl/)
+
+
