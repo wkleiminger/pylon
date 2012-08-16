@@ -1,0 +1,18 @@
+Pylon OpenWrt package feed
+==========================
+
+Installation:
+
+1. Go to your OpenWrt SDK directory and append the follwing line to 
+   the feeds.conf file:
+   
+   src-link pylon /your/path/to/pylon/openwrt/package
+   
+2. Run the following commands:
+
+   ./scripts/feeds update pylon
+   ./scripts/feeds install -a -p pylon
+
+3. Run make menuconfig and select the desired pylon packages from then
+   Utilities category
+
